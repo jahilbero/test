@@ -4,15 +4,18 @@
 
 <mat-sidenav-container class="example-container">
 
-  <mat-sidenav #sidenav mode="side" opened>
+  <mat-sidenav class="side" #sidenav mode="side" opened>
       <!-- <img src='assets/logo.svg.png' id='logo-sidenav'> -->
       <mat-nav-list>
           <mat-list-item>
-              <a mat-button class='sidenav-button'><mat-icon>people</mat-icon><span>Facebook</span></a>
+              <a mat-button class='sidenav-button' href="http://www.facebook.com"><mat-icon>people</mat-icon><span>Facebook</span></a>
           </mat-list-item>
           <mat-list-item>
-              <a mat-button class='sidenav-button'><mat-icon>business</mat-icon><span>Twitter</span></a>
+              <a mat-button class='sidenav-button' href="http://www.twitter.com"><mat-icon>business</mat-icon><span>Twitter</span></a>
           </mat-list-item>
+          <mat-list-item>
+            <a mat-button class='sidenav-button' href="http://www.instagram.com"><mat-icon>photos</mat-icon><span>Instagram</span></a>
+        </mat-list-item>
           
       </mat-nav-list>
 

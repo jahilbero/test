@@ -12,4 +12,6 @@ export class BodyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  typesOfShoes: string[] = ['Basketball', 'Table Tennis', 'Bullying', 'Smirking', 'Sleeping'];
+
 }

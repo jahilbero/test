@@ -24,19 +24,17 @@
 
 
 <mat-card>
-    <mat-list-item>
+    <mat-selection-list #shoes>
+        <mat-label>What are my hobbies</mat-label>
         <br>
-        <mat-form-field class='input-fields' appearance='outline'>
-            <mat-label>Insert your name</mat-label>
-            <input matInput>
-        </mat-form-field>
-    
-        <mat-form-field class='input-fields' appearance='outline'>
-            <mat-label>About me</mat-label>
-            <textarea matInput></textarea>
-        </mat-form-field>
-        
-    </mat-list-item>
+        <mat-list-option class="hazul" *ngFor="let shoe of typesOfShoes">
+          {{shoe}}
+        </mat-list-option>
+      </mat-selection-list>
+      
+      <p>
+        Options selected: {{shoes.selectedOptions.selected.length}}
+      </p>
     </mat-card>
 </div>
 </div>
