@@ -1,0 +1,42 @@
+
+
+
+
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav #sidenav mode="side" opened>
+      <!-- <img src='assets/logo.svg.png' id='logo-sidenav'> -->
+      <mat-nav-list>
+          <mat-list-item>
+              <a mat-button class='sidenav-button'><mat-icon>people</mat-icon><span>Facebook</span></a>
+          </mat-list-item>
+          <mat-list-item>
+              <a mat-button class='sidenav-button'><mat-icon>business</mat-icon><span>Twitter</span></a>
+          </mat-list-item>
+          
+      </mat-nav-list>
+
+  </mat-sidenav>
+
+
+  <mat-sidenav-content>
+      
+      <mat-toolbar>
+          <button mat-button (click)='sidenav.toggle()'><mat-icon>menu</mat-icon></button>
+          <h2 id='top-heading'>Welcome Bitches</h2>
+          <div id='controls'>
+              <!-- <button mat-button (click)='logout()'><span>Log out<mat-icon>logout</mat-icon></span></button>  -->
+          </div>
+      </mat-toolbar>
+
+
+      
+
+
+      
+      
+      <app-body></app-body>
+  
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

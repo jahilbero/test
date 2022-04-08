@@ -1,0 +1,25 @@
+#top-heading{
+    margin-left:20px;
+    color:darkgreen;
+}
+
+mat-toolbar-row {
+    justify-content: center;
+    color: darkgreen;
+}
+
+mat-toolbar {
+    background-color:darkseagreen;
+}
+
+.mat-icon {
+    color: cadetblue;
+}
+
+mat-sidenav{
+    width:200px;
+}
+
+mat-sidenav-container{
+    height:100%;
+}
